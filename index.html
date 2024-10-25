@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stronghold</title>
+    <link rel="icon" href="https://i.ibb.co.com/x8p6Mb1/313929390-1167372244128131-732845532329726082-n.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Halaman Login -->
+    <div class="login-container" id="loginPage">
+        <div class="login-box">
+            <img src="https://i.ibb.co.com/CskQnyb/313929390-1167372244128131-732845532329726082-n.jpg" alt="Logo" class="login-logo">
+            <input type="text" class="login-input" placeholder="Masukkan nama kamu" id="loginInput">
+            <button class="login-button" onclick="login()">Masuk ke Stronghold</button>
+        </div>
+    </div>
+
+    <!-- Pesan Selamat Datang -->
+    <div class="welcome-message" id="welcomeMessage">
+        <h2>Selamat Datang di Stronghold!</h2>
+        <p>Mari Jelajahi Perjalanan Persahabatan Kita...</p>
+    </div>
+
+    <!-- Halaman Utama -->
+    <div id="mainPage" style="display: none;">
+        <img src="https://i.ibb.co.com/x8p6Mb1/313929390-1167372244128131-732845532329726082-n.jpg" alt="Logo" class="logo" id="logo">
+        
+        <header class="header">
+            <h1 class="title">Stronghold</h1>
+            <p class="caption">Di mana persahabatan tak mengenal batas
+
+                "Sahabat adalah mereka yang mengerti masa lalumu, percaya pada masa depanmu, dan menerimamu hari ini seperti apa adanya."</p>
+        </header>
+
+        <!-- Slider Gambar -->
+        <div class="slider">
+            <div class="slider-container" id="sliderContainer">
+                <a href="https://ibb.co.com/9yhHkk0"><img src="https://i.ibb.co.com/j3zkPPY/Snapinsta-app-280821093-804243370552505-697817912019542654-n-1080.jpg" alt="Snapinsta-app-280821093-804243370552505-697817912019542654-n-1080" border="0"></a>
+                <a href="https://ibb.co.com/QDfDPjn"><img src="https://i.ibb.co.com/NTsT9np/Snapinsta-app-279284799-320043163605961-3207292865455601900-n-1080.jpg" alt="Snapinsta-app-279284799-320043163605961-3207292865455601900-n-1080" border="0"></a>
+                <a href="https://ibb.co.com/c6MrMXm"><img src="https://i.ibb.co.com/VgrqrpK/Snapinsta-app-279696356-511559230429480-5123563703071806574-n-1080.jpg" alt="Snapinsta-app-279696356-511559230429480-5123563703071806574-n-1080" border="0"></a>
+                <a href="https://ibb.co.com/Fm5MvHH"><img src="https://i.ibb.co.com/BcyxDnn/Snapinsta-app-376709769-242626658282094-3489014894043954948-n-1080.jpg" alt="Snapinsta-app-376709769-242626658282094-3489014894043954948-n-1080" border="0"></a>
+                <a href="https://ibb.co.com/T0YCX6F"><img src="https://i.ibb.co.com/fNqcRfP/Snapinsta-app-426138090-701143655215786-7467407410833079434-n-1080.jpg" alt="Snapinsta-app-426138090-701143655215786-7467407410833079434-n-1080" border="0"></a>
+                <a href="https://ibb.co.com/FKFN1CD"><img src="https://i.ibb.co.com/NsMQqby/Snapinsta-app-425205334-902554934670330-8053171849697093888-n-1080.jpg" alt="Snapinsta-app-425205334-902554934670330-8053171849697093888-n-1080" border="0"></a>
+                <a href="https://ibb.co.com/FKFN1CD"><img src="https://i.ibb.co.com/NsMQqby/Snapinsta-app-425205334-902554934670330-8053171849697093888-n-1080.jpg" alt="Snapinsta-app-425205334-902554934670330-8053171849697093888-n-1080" border="0"></a>
+                <a href="https://ibb.co.com/cycdxP0"><img src="https://i.ibb.co.com/nwsSRT9/Snapinsta-app-452987613-1713195756201058-3777604254533172874-n-1080.jpg" alt="Snapinsta-app-452987613-1713195756201058-3777604254533172874-n-1080" border="0"></a>
+            </div>
+        </div>
+
+        <!-- Bagian Teman -->
+        <div class="friends-container">
+            <!-- Vemas -->
+            <a href="profiles/vemas.html" class="friend-card">
+                <img src="https://i.ibb.co.com/n7wfnbT/Vemas.jpg" alt="Vemas" class="friend-image">
+                <div class="friend-info">
+                    <h3 class="friend-name">VEMAS ANDRESTON</h3>
+                    <p class="friend-caption">Teman dalam suka dan duka </p>
+                </div>
+            </a>
+
+            <!-- Megi -->
+            <a href="profiles/megi.html" class="friend-card">
+                <img src="https://i.ibb.co.com/gFhysPq/Megi.jpg" alt="Megi" class="friend-image">
+                <div class="friend-info">
+                    <h3 class="friend-name">MEGI AGESTRI</h3>
+                    <p class="friend-caption">Ahli Fakta Random dan Lawakan Receh</p>
+                </div>
+            </a>
+
+            <a href="profiles/afrizal.html" class="friend-card">
+                <img src="https://i.ibb.co.com/GWPmBXb/Afrizal.jpg" alt="afrizal" class="friend-image">
+                <div class="friend-info">
+                    <h3 class="friend-name">AFRIZAL ARTHA</h3>
+                    <p class="friend-caption">Si Pembawa Keseruan di Setiap Moment</p>
+                </div>
+            </a>
+
+            <a href="profiles/jovansyah.html" class="friend-card">
+                <img src="https://i.ibb.co.com/znZx8qj/Jovan.png" alt="jovansyah" class="friend-image">
+                <div class="friend-info">
+                    <h3 class="friend-name">JOVANSYAH</h3>
+                    <p class="friend-caption">Teman petualangan sejati</p>
+                </div>
+                </a>
+
+            <a href="profiles/dimas.html" class="friend-card">
+                <img src="https://i.ibb.co.com/tPD5V4m/Dimas.jpg" alt="dimas" class="friend-image">
+                <div class="friend-info">
+                    <h3 class="friend-name">DIMAS WAHYU</h3>
+                    <p class="friend-caption">Inspirasi dalam setiap langkah</p>
+                </div>
+                </a>
+                
+            <a href="profiles/tirta.html" class="friend-card">
+                <img src="https://i.ibb.co.com/TmQCwjz/Tirta.jpg" alt="tirta" class="friend-image">
+                <div class="friend-info">
+                    <h3 class="friend-name">M TIRTA</h3>
+                    <p class="friend-caption">Pendengar setia dan penasihat bijak</p>
+                </div>
+                </a>
+                
+            <a href="profiles/rahmat.html" class="friend-card">
+                <img src="https://i.ibb.co.com/DwtrV0W/Rahmat.jpg" alt="rahmat" class="friend-image">
+                <div class="friend-info">
+                    <h3 class="friend-name">RAHMAT AKBAR</h3>
+                    <p class="friend-caption">Sahabat dalam setiap perjalanan hidup</p>
+                </div>
+                </a>            
+
+        </div>
+
+        <!-- Bagian Kenangan -->
+        <div class="memories-section">
+            <h2>Kenangan Kita</h2>
+            <div class="upload-container">
+                <h3>Tambah Kenangan Baru</h3>
+                <input type="file" id="fileInput" style="display: none;" accept="image/*">
+                <button id="uploadBtn" onclick="document.getElementById('fileInput').click()">Unggah Foto</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

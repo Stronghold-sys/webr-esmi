@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1c20 0%, #2d3436 100%);
+    color: white;
+}
+
+/* Styles Halaman Login */
+.login-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Memastikan konten di tengah vertikal */
+    align-items: center; /* Memastikan konten di tengah horizontal */
+    background: url('https://i.ibb.co.com/mtKv1B5/Snapinsta-app-280576884-549939846496228-6342811121891042168-n-1080.jpg') center/cover;
+    position: relative;
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Memastikan isi login-box terpusat */
+}
+
+.login-logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 2rem; /* Jarak antara logo dan menu login */
+    object-fit: cover;
+    align-self: center; /* Pastikan logo tetap di tengah */
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background:  rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #00a8ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background: #0097e6;
+}
+
+/* Styles Halaman Utama */
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.logo.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.header {
+    text-align: center;
+    padding: 100px 20px 50px;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #00a8ff;
+}
+
+.caption {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #dfe6e9;
+}
+
+/* Styles Slider */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Styles Kartu Teman */
+.friends-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.friend-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.friend-card:hover {
+    transform: translateY(-10px);
+}
+
+.friend-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.friend-info {
+    padding: 1rem;
+}
+
+.friend-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #00a8ff;
+}
+
+.friend-caption {
+    font-size: 1rem;
+    color: #dfe6e9;
+}
+
+/* Styles Bagian Kenangan */
+.memories-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.upload-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+#uploadBtn {
+    background: #00a8ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#uploadBtn:hover {
+    background: #0097e6;
+}
+
+/* Styles Pesan Selamat Datang */
+.welcome-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 168, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+}
